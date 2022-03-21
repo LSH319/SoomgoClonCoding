@@ -1,0 +1,15 @@
+head{
+    display: block;
+    border-bottom: 1px solid gray;
+    /* position: fixed; */
+}
+
+.inner{
+    max-width: 1200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

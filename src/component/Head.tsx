@@ -2,17 +2,20 @@ import { Link } from 'react-router-dom';
 
 import Search from "./Search";
 import HeadNav from "./HeadNav";
+import '../css/Head.css';
 
 function Head(){
 
     return(
-        <div style={{display:'flex'}}>
-            <Link to={'/'}>
-                <img src="img/logo.svg" alt="로고" />
-            </Link>
-            <Search />
-            <HeadNav />
-        </div>
+        <head>
+            <div className='inner'>
+                <Link to={'/'}>
+                    <img src="img/logo.svg" alt="로고" />
+                </Link>
+                <Search />
+                <HeadNav />
+            </div>
+        </head>
     );
 }
 
