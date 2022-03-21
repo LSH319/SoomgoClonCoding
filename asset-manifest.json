@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/SoomgoCloneCoding/static/js/main.309e99fd.js",
+    "main.css": "/SoomgoCloneCoding/static/css/main.1738e1f4.css",
+    "main.js": "/SoomgoCloneCoding/static/js/main.6f194ce5.js",
     "index.html": "/SoomgoCloneCoding/index.html",
-    "main.309e99fd.js.map": "/SoomgoCloneCoding/static/js/main.309e99fd.js.map"
+    "main.1738e1f4.css.map": "/SoomgoCloneCoding/static/css/main.1738e1f4.css.map",
+    "main.6f194ce5.js.map": "/SoomgoCloneCoding/static/js/main.6f194ce5.js.map"
   },
   "entrypoints": [
-    "static/js/main.309e99fd.js"
+    "static/css/main.1738e1f4.css",
+    "static/js/main.6f194ce5.js"
   ]
 }
