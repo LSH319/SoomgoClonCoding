@@ -1,7 +1,7 @@
 
 function HeadNav(){
     return(
-        <div style={{display:'flex'}}>
+        <div style={{display:'flex'}} className='headNav'>
             <ul style={{display:'flex'}}>
                 <li>
                     고수찾기

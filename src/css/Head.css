@@ -1,7 +1,8 @@
-head{
-    display: block;
-    border-bottom: 1px solid gray;
-    /* position: fixed; */
+header{
+    height: 72px;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
 }
 
 .inner{
@@ -12,4 +13,127 @@ head{
     left: 0;
     right: 0;
     margin: auto;
+    position: relative;
+}
+
+.head{
+    /* 970*48 */
+    height: 48px;
+    width: 970px;
+    position : absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.head .leftsection,
+.head .rightsection{
+    width: 50%;
+    height: 100%;
+    position : absolute;
+}
+
+.head .leftsection{
+    left: 0;
+}
+
+.head .leftsection .link .logoimg{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.head .leftsection .search{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 48px;
+    width: 336px;
+    border-radius: 5px 5px 0 0;
+}
+
+ .head .search:focus-within{
+    outline:2px solid #00c7ae;
+ }
+
+.head .search .searchBar{
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+.head .search .searchBar:focus{
+    outline: none;
+}
+
+.head .search .dropBox{
+    width: 336px;
+    height: 295px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.head .search .dropBox .tapNav{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.head .search .dropBox .tapNav > li{
+    display: flex;
+    width: 50%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.head .search .dropBox .keywords{
+    overflow-y: scroll;
+    height: 204px;
+}
+
+.head .search .dropBox .keywords > li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.head .search .dropBox .keywords > li:hover{
+    background-color: gray;
+}
+
+.head .search .dropBox .dropBoxFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid gray;
+}
+
+.head .search .dropBox .dropBoxFooter > div:nth-child(1){
+    position: absolute;
+    left: 12px;
+    font-weight: 700;
+}
+
+.head .search .dropBox .dropBoxFooter > div:nth-child(2){
+    position: absolute;
+    right: 12px;
+    font-weight: 700;
+}
+
+.head .rightsection{
+    right: 0;
 }

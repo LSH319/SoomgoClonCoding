@@ -7,15 +7,19 @@ import '../css/Head.css';
 function Head(){
 
     return(
-        <head>
-            <div className='inner'>
-                <Link to={'/'}>
-                    <img src="img/logo.svg" alt="로고" />
-                </Link>
+        <header>
+            <div className='inner head'>
+                <div className='leftsection' style={{display:'flex'}}>
+                    <Link to={'/'} className='link'>
+                        <img src="img/logo.svg" alt="로고" className='logoimg'/>
+                    </Link>
                 <Search />
-                <HeadNav />
+                </div>
+                <div className='rightsection'>
+                    <HeadNav />
+                </div>
             </div>
-        </head>
+        </header>
     );
 }
 

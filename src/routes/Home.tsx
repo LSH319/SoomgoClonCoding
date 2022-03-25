@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from 'react';
 import Head from '../component/Head';
 import Swiper from '../component/SwiperContainer';
 import Footer from '../component/Footer';
+import Category from '../component/Category';
+import Minibanner from '../component/Minibanner';
 
 function Home(){
-    
     return(
-        <body>
+        <div>
             <Head />
             <Swiper />
+            <Category />
+            <Minibanner />
             <Footer />
-        </body>
+        </div>
     );
 }
 
