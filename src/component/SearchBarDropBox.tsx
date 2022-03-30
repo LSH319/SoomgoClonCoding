@@ -1,40 +1,71 @@
 import { useState } from "react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 interface data{
     keywords:string[]
     searchRef:React.RefObject<HTMLInputElement>
+    searchBarOff: ()=> void;
 }
 
 function DropBox(props:data){
 
     const [tapNav,setTapNav] = useState(true);
+    const [searchLog,setSeatchLog] = useState<string[]>([]);
 
-    const test = function(){
-        if(props.searchRef.current !== null){
-            props.searchRef.current.focus();
-            console.log(props.searchRef.current);
-            props.searchRef.current.focus();
-        }
+    const BlurSearchBar = function(){
+        props.searchBarOff();
+    }
+
+    const tapNavT = function(){
+        setTapNav(true);
+    }
+
+    const tapNavF = function(){
+        setTapNav(false);
+    }
+
+    const clearLog = function(){
+        setSeatchLog([]);
     }
 
     return(
         <div className='dropBox'>
             <div className="dropBoxBody">
                 <ul className='tapNav'>
-                    <li onClick={test} className={`${tapNav? 'active':''}`}>인기 키워드</li>
-                    <li onClick={test} className={`${tapNav? '':'active'}`}>최근 검색한 서비스</li>
+                    <li onClick={tapNavT} className={`${tapNav?'active':''}`}>인기 키워드</li>
+                    <li onClick={tapNavF} className={`${tapNav?'':'active'}`}>최근 검색한 서비스</li>
                 </ul>
-                <ul className="keywords">
+
+                {tapNav? 
+                    <ul className="keywords">
                     {props.keywords.map(
                         (keyword) => (
-                        <li key={keyword}>{keyword}</li>
+                        <li key={keyword}>
+                            <Link to='/'>
+                                {keyword}
+                            </Link>
+                        </li>
                     ))}
-                </ul>
+                    </ul> :
+                    <ul className="keywords">
+                    {searchLog.map(
+                        (Log) => (
+                        <li key={Log}>
+                            <Link to='/'>
+                                {Log}
+                            </Link>
+                        </li>
+                    ))}
+                    </ul>
+                }
+                
+
+
             </div>
             <div className='dropBoxFooter'>
-                <div>전체 삭제</div>
-                <div onClick={test}>닫기</div>
+                {tapNav? null : <div className="deleteAll" onClick={clearLog}>전체 삭제</div>}
+                <div onClick={BlurSearchBar} className='closeDropBox'>닫기</div>
             </div>
         </div>
     );

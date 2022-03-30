@@ -115,6 +115,10 @@ header{
     border-bottom: 1px solid gray;
 }
 
+.head .search .dropBox .dropBoxBody .tapNav .active{
+    color: #00c7ae;
+}
+
 .head .search .dropBox .dropBoxBody .tapNav > li{
     display: flex;
     width: 50%;
@@ -127,6 +131,7 @@ header{
 
 .head .search .dropBox .dropBoxBody .keywords{
     height: 204px;
+    /* width: 100%; */
 }
 
 .head .search .dropBox .dropBoxBody .keywords > li{
@@ -142,6 +147,12 @@ header{
     background-color: #e1e1e1;
 }
 
+.head .search .dropBox .dropBoxBody .keywords > li >a{
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+}
+
 .head .search .dropBox .dropBoxFooter{
     display: flex;
     justify-content: center;
@@ -154,16 +165,18 @@ header{
     box-sizing: border-box;
 }
 
-.head .search .dropBox .dropBoxFooter > div:nth-child(1){
+.head .search .dropBox .dropBoxFooter .deleteAll{
     position: absolute;
     left: 12px;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.head .search .dropBox .dropBoxFooter > div:nth-child(2){
+.head .search .dropBox .dropBoxFooter .closeDropBox{
     position: absolute;
     right: 12px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .head .rightsection{

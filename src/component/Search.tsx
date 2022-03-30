@@ -32,10 +32,10 @@ function Search(){
                 type={'text'}
                 placeholder={'어떤 서비스가 필요하세요?'}
                 className='searchBar'
-                onFocus={searchBarOn} onBlur={searchBarOff}
+                onFocus={searchBarOn}
             />
             {/* <DropBox keywords={keywords} searchRef={searchRef}/> */}
-            {serachBarFocus? <DropBox keywords={keywords} searchRef={searchRef} />:null}
+            {serachBarFocus? <DropBox keywords={keywords} searchRef={searchRef} searchBarOff={searchBarOff}/>:null}
         </div>
     );
 }
