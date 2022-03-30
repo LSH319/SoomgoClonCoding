@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
+import '../css/Swiper.css';
 
 function SwiperContainer(){
 const imgs = ['img/banner-1.png','img/banner-2.png','img/banner-3.png'];
@@ -20,12 +20,11 @@ const imgs = ['img/banner-1.png','img/banner-2.png','img/banner-3.png'];
             modules={[Pagination, Navigation]}
             autoplay ={{delay:1000}}
             loop = {true}
-            style ={{top:'72px'}}
         >
             {imgs.map((img,index) =>(
                 <SwiperSlide key={index}>
                     <Link to='/'>
-                        <img src={img} alt='슬라이드'/>
+                        <img src={img} alt='슬라이드' style={{width:'970px'}}/>
                     </Link>
                 </SwiperSlide>
             ))}

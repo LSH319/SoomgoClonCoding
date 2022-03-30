@@ -1,13 +1,13 @@
 
 function HeadNav(){
     return(
-        <div style={{display:'flex'}} className='headNav'>
-            <ul style={{display:'flex'}}>
+        <div className='headNav'>
+            <ul className='navList'>
                 <li>
                     고수찾기
                 </li>
                 <li>
-                    바로구매
+                    마켓
                 </li>
                 <li>
                     로그인
@@ -16,7 +16,7 @@ function HeadNav(){
                     회원가입
                 </li>
             </ul>
-            <button>고수가입</button>
+            <button className="signIn">고수가입</button>
         </div>
     );
 }

@@ -1,0 +1,47 @@
+.swiper{
+    top: 72px;
+    width: 970px
+}
+
+.swiper .swiper-button-prev{
+    background: url('/public/img/prev.png') no-repeat;
+    
+}
+
+.swiper .swiper-button-next{
+    background: url('/public/img/next.png') no-repeat;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next{
+    display: block;
+}
+
+.swiper .swiper-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 7px;
+    margin-left: 94%;
+    color: white;
+    background-color: gray;
+}
