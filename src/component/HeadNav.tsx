@@ -1,22 +1,35 @@
+import { Link } from "react-router-dom";
 
 function HeadNav(){
     return(
         <div className='headNav'>
             <ul className='navList'>
                 <li>
-                    고수찾기
+                    <Link to='/'>
+                        고수찾기
+                    </Link>
                 </li>
                 <li>
-                    마켓
+                    <Link to='/'>
+                        마켓
+                    </Link>
                 </li>
                 <li>
-                    로그인
+                    <Link to='/'>
+                        로그인
+                    </Link>
                 </li>
                 <li>
-                    회원가입
+                    <Link to='/'>
+                        회원가입
+                    </Link>
                 </li>
             </ul>
-            <button className="signIn">고수가입</button>
+            <button className="signIn">
+                <Link to='/'>
+                    고수가입
+                </Link>
+            </button>
         </div>
     );
 }

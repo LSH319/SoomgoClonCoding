@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper';
 import { Link } from 'react-router-dom';
 
 import 'swiper/css';
@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 import '../css/Swiper.css';
 
 function SwiperContainer(){
-const imgs = ['img/banner-1.png','img/banner-2.png','img/banner-3.png'];
+    const imgs = ['img/banner-1.png','img/banner-2.png','img/banner-3.png'];
 
     return(
         <Swiper
@@ -17,9 +17,13 @@ const imgs = ['img/banner-1.png','img/banner-2.png','img/banner-3.png'];
             type: "fraction",
             }}
             navigation={true}
-            modules={[Pagination, Navigation]}
-            autoplay ={{delay:1000}}
+            modules={[Pagination, Navigation, Autoplay]}
+            autoplay ={{
+                delay:3000,
+            }}
             loop = {true}
+            className = 'bannerswiper'
+            touchRatio={0}
         >
             {imgs.map((img,index) =>(
                 <SwiperSlide key={index}>

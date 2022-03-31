@@ -1,10 +1,6 @@
 import { useRef, useState } from "react";
 import DropBox from "./SearchBarDropBox";
 
-interface data{
-    keywords:string[]
-}
-
 function Search(){
     const keywords = ['영어 과외','PT','보컬레슨','리모델링','시공','수리','인테리어','과외','골프 레슨','수도 설치'];
 

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 interface data{
@@ -19,10 +18,12 @@ function DropBox(props:data){
 
     const tapNavT = function(){
         setTapNav(true);
+        props.searchRef.current?.focus();
     }
 
     const tapNavF = function(){
         setTapNav(false);
+        props.searchRef.current?.focus();
     }
 
     const clearLog = function(){

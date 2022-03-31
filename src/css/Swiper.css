@@ -1,19 +1,19 @@
-.swiper{
-    top: 72px;
+.bannerswiper{
+    top: 80px;
     width: 970px
 }
 
-.swiper .swiper-button-prev{
+.bannerswiper .swiper-button-prev{
     background: url('/public/img/prev.png') no-repeat;
     
 }
 
-.swiper .swiper-button-next{
+.bannerswiper .swiper-button-next{
     background: url('/public/img/next.png') no-repeat;
 }
 
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next{
+.bannerswiper .swiper-button-prev,
+.bannerswiper .swiper-button-next{
     display: none;
     width: 40px;
     height: 40px;
@@ -22,17 +22,17 @@
     background-position: center;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.bannerswiper .swiper-button-next::after,
+.bannerswiper .swiper-button-prev::after {
   display: none;
 }
 
-.swiper:hover .swiper-button-prev,
-.swiper:hover .swiper-button-next{
+.bannerswiper:hover .swiper-button-prev,
+.bannerswiper:hover .swiper-button-next{
     display: block;
 }
 
-.swiper .swiper-pagination{
+.bannerswiper .swiper-pagination{
     display: flex;
     align-items: center;
     justify-content: center;
