@@ -3,8 +3,20 @@ import style from '../css/text.module.css';
 
 function Fix(){
     const linkURL=['/','/','/','/','/','/'];
-    const imgURL=['img/slideimg.png','img/slideimg.png','img/slideimg.png','img/slideimg.png','img/slideimg.png','img/slideimg.png'];
-    const fixTitle = ['전기 배선 설치 및 수리','블라인드/커튼 제작/설치/수리', '문 설치 및 수리', '벽걸이TV 설치 및 철거','휴대폰/태블릿/스마트기기 수리','에어컨 설치 및 수리'];
+    const imgURL=[
+        'img/fix1.jpg',
+        'img/fix2.jpg',
+        'img/fix3.jpg',
+        'img/fix4.jpg',
+        'img/fix5.jpg',
+        'img/fix6.png'];
+    const fixTitle = [
+        '전기 배선 설치 및 수리',
+        '블라인드/커튼 제작/설치/수리',
+        '문 설치 및 수리',
+        '벽걸이TV 설치 및 철거',
+        '휴대폰/태블릿/스마트기기 수리',
+        '에어컨 설치 및 수리'];
 
     return(
         <div>
