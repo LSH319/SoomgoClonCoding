@@ -7,7 +7,7 @@ function KnowHow(){
 
     const linkURL=['/','/','/','/','/','/','/','/'];
     const imgURL=[
-        'img/slideimg.png',
+        'img/knowHow_study.png',
         'img/knowHow_artTherapy.png',
         'img/knowHow_vocalLesson.png',
         'img/knowHow_carInsurance.png',

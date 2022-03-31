@@ -9,7 +9,14 @@ import 'swiper/css/scrollbar';
 import '../css/Swiper.css';
 
 function SwiperContainer(){
-    const imgs = ['img/banner-1.png','img/banner-2.png','img/banner-3.png'];
+    const imgs = [
+        'img/banner-1.png',
+        'img/banner-2.png',
+        'img/banner-3.png',
+        'img/banner-4.png',
+        'img/banner-5.png',
+        'img/banner-6.png',
+        'img/banner-7.png'];
 
     return(
         <Swiper
