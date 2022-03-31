@@ -8,6 +8,7 @@ import Cleaning from '../component/Cleaning';
 import Hobby from '../component/Hobby';
 import PleaseEmployment from '../component/PleaseEmployment';
 import Fix from '../component/Fix';
+import LocationNav from '../component/LocationNav';
 
 function Home(){
     return(
@@ -21,6 +22,7 @@ function Home(){
             <Hobby />
             <PleaseEmployment />
             <Fix />
+            <LocationNav />
             <Footer />
         </div>
     );

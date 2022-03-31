@@ -30,21 +30,24 @@ function ServiceSwiper(props:serviceData){
                     <SwiperSlide key={index}>
                         <Link to={props.linkURL[index]}>
                             <img src={props.imgURL[index]} alt="slideimg" className='serviceImg'/>
+
                             {props.tagText? 
-                            <p className='serviceTag'>
-                                {props.tagText[index]}
-                            </p>:
-                            null }
+                                <p className='serviceTag'>
+                                    {props.tagText[index]}
+                                </p>:
+                                null }
+
                             {props.titleText? 
-                            <p className='serviceTitle'>
-                                {props.titleText[index]}
-                            </p>:
-                            null }
+                                <p className='serviceTitle'>
+                                    {props.titleText[index]}
+                                </p>:
+                                null }
+
                             {props.offerText? 
-                            <p className='serviceOffer'>
-                                {props.offerText[index]}
-                            </p>:
-                            null }
+                                <p className='serviceOffer'>
+                                    {props.offerText[index]}
+                                </p>:
+                                null }
                         </Link>
                     </SwiperSlide>
                 ))}
