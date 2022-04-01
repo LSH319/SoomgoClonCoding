@@ -1,4 +1,3 @@
-import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,6 +9,9 @@ interface serviceData{
     tagText?:string[],
     titleText?:string[],
     offerText?:string[]
+    tagStyle?: React.CSSProperties,
+    titleStyle?: React.CSSProperties,
+    offerStyle?: React.CSSProperties,
 }
 
 function ServiceSwiper(props:serviceData){
@@ -32,20 +34,26 @@ function ServiceSwiper(props:serviceData){
                             <img src={props.imgURL[index]} alt="slideimg" className='serviceImg'/>
 
                             {props.tagText? 
-                                <p className='serviceTag'>
-                                    {props.tagText[index]}
+                                <p className='serviceTag' style={props.tagStyle}>
+                                    {props.tagText[index].length < 30 ? 
+                                        props.tagText[index] :
+                                        props.tagText[index].substring(0,30) + "..."}
                                 </p>:
                                 null }
 
                             {props.titleText? 
-                                <p className='serviceTitle'>
-                                    {props.titleText[index]}
+                                <p className='serviceTitle' style = {props.titleStyle}>
+                                    {props.titleText[index].length < 30 ? 
+                                        props.titleText[index] :
+                                        props.titleText[index].substring(0,30) + "..."}
                                 </p>:
                                 null }
 
                             {props.offerText? 
-                                <p className='serviceOffer'>
-                                    {props.offerText[index]}
+                                <p className='serviceOffer' style={props.offerStyle}>
+                                    {props.offerText[index].length < 30 ? 
+                                        props.offerText[index] :
+                                        props.offerText[index].substring(0,30) + "..."}
                                 </p>:
                                 null }
                         </Link>

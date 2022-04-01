@@ -26,8 +26,9 @@ a{
 }
 
 .CategoryContainer > a > li:hover{
-    background-color: #00000026;
+    background-color: #fafafa;
     transform: translateY(-10px);
+    border-radius: 10px;
 }
 
 .CategoryContainer > a > li img{

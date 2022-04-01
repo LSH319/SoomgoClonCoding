@@ -13,7 +13,7 @@ function LocationNav(){
             </div>
             <ul className="locationList">
                 {locations.map((location,index)=>(
-                    <li>
+                    <li key={location}>
                         <Link to={locationURL[index]}>
                             {location}
                         </Link>

@@ -15,15 +15,18 @@
 
 .serviceSwiper .serviceTag{
     font-size: 12px;
+    margin-bottom: 5px;
 }
 
 .serviceSwiper .serviceTitle{
     font-size: 15px;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .serviceSwiper .serviceOffer{
     font-size: 12px;
+    margin-bottom: 5px;
 }
 
 .service{

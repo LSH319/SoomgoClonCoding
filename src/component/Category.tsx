@@ -2,7 +2,15 @@ import { Link } from "react-router-dom";
 import '../css/Category.css';
 
 function Category(){
-    const categoryItems = [['레슨','img/lesson.svg','/'],['홈/리빙','img/home-living.svg','/'],['이벤트','img/event.svg','/'],['비즈니스','img/business.svg','/'],['디자인/개발','img/design-development.svg','/'],['건강/미용','img/health-beauty.svg','/'],['알바','img/part-time-job.svg','/'],['기타','img/etc.svg','/']];
+    const categoryItems = [
+        ['레슨','img/lesson.svg','/'],
+        ['홈/리빙','img/home-living.svg','/'],
+        ['이벤트','img/event.svg','/'],
+        ['비즈니스','img/business.svg','/'],
+        ['디자인/개발','img/design-development.svg','/'],
+        ['건강/미용','img/health-beauty.svg','/'],
+        ['알바','img/part-time-job.svg','/'],
+        ['기타','img/etc.svg','/']];
     return(
         <ul className="CategoryContainer">
             {categoryItems.map(
